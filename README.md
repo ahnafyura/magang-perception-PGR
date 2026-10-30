@@ -1,4 +1,4 @@
-# Magang PGR: Perception di VRX
+# Magang PGR: Perception in VRX
 
 Materi praktik **Perception 1 (Computer Vision)** dan **Perception 2 (LiDAR dan Fusion)** Magang PGR Barunastra ITS.
 Simulasinya memakai **VRX** (Virtual RobotX): kapal WAM-V di danau Sydney Regatta, ditambah lintasan buoy merah, hijau, oranye, dan hitam.
