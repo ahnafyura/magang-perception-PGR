@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 # Menjalankan arena tiruan + RViz. Butuh ROS 2 (Jazzy). Tanpa Gazebo, tanpa GPU.
 HERE="$(cd "$(dirname "$0")" && pwd)"
+export QT_QPA_PLATFORM=xcb   # paksa X11: pada sesi Wayland jendela render gagal dibuat
 source /opt/ros/jazzy/setup.bash
 python3 "$HERE/arena_sim.py" "$@" &
 SIM=$!
