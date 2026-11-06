@@ -436,7 +436,7 @@ class ArenaSim(Node):
         for i, s in enumerate((ar.slot1, ar.slot2)):
             ms.markers.append(self.mk("slot", i, Marker.CUBE, (s[0] + s[2]) / 2, (s[1] + s[3]) / 2, 0.005, s[2] - s[0], s[3] - s[1], 0.01, COL["blue"], 0.35))
         for i, (bx, by, col, r) in enumerate(ar.buoys):
-            ms.markers.append(self.mk("buoy", i, Marker.CYLINDER, bx, by, 0.2, 2 * r, 2 * r, 0.4, COL[col]))
+            ms.markers.append(self.mk("buoy", i, Marker.SPHERE, bx, by, r * 0.35, 2 * r, 2 * r, 2 * r, COL[col]))
         for i, (s, x, y) in enumerate(ar.drops):
             ms.markers.append(self.mk("zona_taruh", i, Marker.CUBE, x, y, 0.21, 0.15 * vs * 1.3, 0.15 * vs * 1.3, 0.005, COL["white"], 0.5))
         for i, (s, x, y) in self.item_pos.items():
